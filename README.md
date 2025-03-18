@@ -7,7 +7,7 @@ intended for use with seL4.
 
 When you use something like the
 [official Raspberry Pi imager](https://www.raspberrypi.com/software/)
-it sets up your SD card if you were to boot straight into their Linux
+it sets up your microSD card if you were to boot straight into their Linux
 OS and nothing else. This makes sense for most users, but if you're
 using the board with seL4, you need to change a couple things.
 
@@ -21,7 +21,12 @@ mess something up.
 > A 32GB or higher microSD card is recommended, smaller cards may run into issues
 > with this image.
 
-Download the image from the
+Instead of booting straight into Raspberry Pi OS, this image boots into U-Boot
+which from there can be used to boot whatever you want. In this case, seL4.
+The image still contains Raspberry Pi OS, so from the U-Boot command line
+you can still boot into it if you want.
+
+First, download the image from the
 [releases page](https://github.com/Ivan-Velickovic/sel4_rpi4b_sdcard/releases/latest).
 
 Now you want to take your microSD card and plug it into your computer.
