@@ -1,4 +1,4 @@
-## seL4 Raspberry Pi 4B image
+# seL4 Raspberry Pi 4B image
 
 This is a pre-built image for the Raspberry Pi 4B
 intended for use with seL4.
